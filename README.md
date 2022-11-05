@@ -10,10 +10,12 @@ Note 2: comment every line of your code.
 Due Date: November 5 at 11:59pm
 
 Testnet token links
-1. Goerli ethereum
-
+1. Goerli
+https://goerli.etherscan.io/token/0xca64de66f3487FcE1e8311cE6E066726F61986E8
 2. Binance
-
+https://testnet.bscscan.com/token/0x59Ae1EfACAaa9Ab708F92BB6f0FA367c581d5A3d
 3. Polygon
+https://mumbai.polygonscan.com/token/0x59Ae1EfACAaa9Ab708F92BB6f0FA367c581d5A3d
 
-Contributor: Lyndah Katusiime
+Token on blockscan
+https://blockscan.com/address/0x59Ae1EfACAaa9Ab708F92BB6f0FA367c581d5A3d
