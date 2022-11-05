@@ -24,7 +24,7 @@ contract ERC20Token is IERC20{
         //method #2 to add the amount to the recepients balance
         balanceOf[recipient] += amount;
 
-        //emit event to return true if code is executed successfully
+        //emit a Transfer event to return true if code is executed successfully
         emit Transfer(msg.sender, recipient, amount);
         return true;
     }
@@ -34,7 +34,7 @@ contract ERC20Token is IERC20{
         //approve goes hand in hand with allowance
         allowance[msg.sender][spender] = amount;
 
-        //emit Approval event to confirm the transaction and return true if code is executed successfully
+        //emit an Approval event to confirm the transaction and return true if code is executed successfully
         emit Approval(msg.sender, spender, amount);
         return true;
     }
@@ -48,16 +48,16 @@ contract ERC20Token is IERC20{
         //increase amount to recipient's acount
         balanceOf[recipient] += amount;
 
-        //emit Transfer event to confirm the transaction return true if code is executed successfully
+        //emit a Transfer event to confirm the transaction return true if code is executed successfully
         emit Transfer(sender, recipient, amount);
         return true;
     }
 
     //function mint to allow owner to create tokens and add them to the owner account
     function mint(uint amount) public{
-        //show the owner's account balance and increase by the minted amount
+        //increase the owner's account balance by the minted amount
         balanceOf[msg.sender] += amount;
-        //show totalSupply of tokens and increase by the minted amount
+        //increase the totalSupply of tokens by the minted amount
         totalSupply += amount;
 
         //emit a transfer event to confirm the transaction
@@ -66,9 +66,9 @@ contract ERC20Token is IERC20{
 
     //function burn to allow owner to destroy specified amount of tokens from owner account
     function burn(uint amount) public{
-        //show the owner's account balance and reduce by the input amount
+        //reduce the owner's account balance by the input amount
         balanceOf[msg.sender] -= amount;
-        //show totalSupply of tokens and reduce by the burnt amount
+        //reduce the totalSupply of tokens by the burnt amount
         totalSupply -= amount;
 
         //emit a transfer event to confirm the transaction
