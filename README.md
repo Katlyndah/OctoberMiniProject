@@ -9,10 +9,11 @@ Note 1: openzeppelin code is not allowed.
 Note 2: comment every line of your code.
 Due Date: November 5 at 11:59pm
 
-Contributor: Lyndah Katusiime
 Testnet token links
 1. Goerli ethereum
 
 2. Binance
 
 3. Polygon
+
+Contributor: Lyndah Katusiime
